@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 4 - Forms</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+<!-- FORM 1 : POST -->
+
+<form method="POST" action="https://httpbin.org/post" target="_blank">
+<label>First Name:</label><br>
+<input type="text" name="first_name" required><br><br>
+<label>Last Name:</label><br>
+<input type="text" name="last_name" required><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+<br><br>
+
+<label>Date of Birth:</label><br>
+<input type="date" name="date_of_birth" required><br><br>
+
+<label>Email:</label><br>
+<input type="email" name="email" required><br><br>
+
+<button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<h2>Search Form</h2>
+<!-- FORM 2 : GET -->
+<form method="GET" action="https://httpbin.org/get" target="_blank">
+<label>Search:</label><br>
+<input type="text" name="search_name">
+<button type="submit">Search</button>
+</form>
+
+</body>
+</html>
